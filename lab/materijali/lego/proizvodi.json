@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "naziv": "Lego Technic",
+        "opis": "Motocikl",
+        "cena": 1300,
+        "lajkovi": 3,
+        "kreator": "pera",
+        "status": "u prodavnici"
+    },
+    {
+        "id": 2,
+        "naziv": "Lego Minecraft",
+        "opis": "Ranc",
+        "cena": 2300,
+        "lajkovi": 5,
+        "kreator": "ana",
+        "status": "u prodavnici"
+    },
+    {
+        "id": 3,
+        "naziv": "Lego Minecraft",
+        "opis": "Zamak",
+        "cena": 0,
+        "lajkovi": 0,
+        "kreator": "ana",
+        "status": "na cekanju"
+    },
+    {
+        "id": 4,
+        "naziv": "Lego Minifigures",
+        "opis": "Serija 2",
+        "cena": 0,
+        "lajkovi": 0,
+        "kreator": "pera",
+        "status": "na cekanju"
+    },
+    {
+        "id": 5,
+        "naziv": "Lego Technic",
+        "opis": "Auto",
+        "cena": 0,
+        "lajkovi": 0,
+        "kreator": "pera",
+        "status": "odbijeno"
+    }
+]

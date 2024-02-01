@@ -1,0 +1,36 @@
+[{
+    "ime": "Petar",
+    "prezime": "Petrovic",
+    "kor_ime": "pera",
+    "lozinka": "pera123",
+    "mejl": "pera@mail.com",
+    "opstina": "Zemun",
+    "tip": "kupac"
+},
+{
+    "ime": "Zivojin",
+    "prezime": "Zivkovic",
+    "kor_ime": "zika",
+    "lozinka": "zika123",
+    "mejl": "zika@mail.com",
+    "opstina": "Zvezdara",
+    "tip": "radnik"
+},
+{
+    "ime": "Ana",
+    "prezime": "Ankovic",
+    "kor_ime": "ana",
+    "lozinka": "ana123",
+    "mejl": "ana@mail.com",
+    "opstina": "Palilula",
+    "tip": "kupac"
+},
+{
+    "ime": "Mika",
+    "prezime": "Mikic",
+    "kor_ime": "mika",
+    "lozinka": "mika123",
+    "mejl": "mika@mail.com",
+    "opstina": "Vracar",
+    "tip": "radnik"
+}]

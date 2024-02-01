@@ -1,0 +1,10 @@
+<input type="text" [(ngModel)]="user.kor_ime"> <br>
+<input type="password" [(ngModel)]="user.lozinka"> <br>
+<select [(ngModel)]="user.tip">
+  <option>kupac</option>
+  <option>radnik</option>
+</select>
+<br>
+<button (click)="login()">Prijavi se</button>
+<br>
+<span style="color: red;">{{errorMessage}}</span>
