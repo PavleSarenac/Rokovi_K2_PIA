@@ -1,0 +1,21 @@
+<button (click)="logout()">Odjavi se</button>
+<hr>
+{{loggedInUser.ime}}, {{loggedInUser.prezime}}, {{loggedInUser.opstina}}
+<hr>
+<table>
+  <tr>
+    <th>naziv</th>
+    <th>opis</th>
+    <th>unos cene</th>
+    <th>odobri</th>
+    <th>odbij</th>
+  </tr>
+  <tr *ngFor="let product of allWaitingProducts">
+    <td>{{product.naziv}}</td>
+    <td>{{product.opis}}</td>
+    <td><input type="text" [(ngModel)]="product.cena"></td>
+    <td><button (click)="approveProduct(product)">Odobri</button></td>
+    <td><button (click)="rejectProduct(product)">Odbij</button></td>
+  </tr>
+</table>
+<hr>

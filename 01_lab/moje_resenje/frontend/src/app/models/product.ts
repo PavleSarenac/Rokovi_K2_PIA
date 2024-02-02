@@ -5,5 +5,8 @@ export class Product {
   cena: number = 0
   lajkovi: number = 0
   kreator: string = ""
-  status: string = ""
+  status: string = "na cekanju"
+
+  imeKreatora: string = ""
+  prezimeKreatora: string = ""
 }

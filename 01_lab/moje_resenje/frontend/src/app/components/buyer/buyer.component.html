@@ -1,0 +1,25 @@
+<button (click)="logout()">Odjavi se</button>
+<hr>
+<table>
+  <tr>
+    <th>naziv</th>
+    <th>cena</th>
+    <th>lajkovi</th>
+    <th>imeKreatora</th>
+    <th>prezimeKreatora</th>
+    <th>lajk dugme</th>
+  </tr>
+  <tr *ngFor="let product of allSellingProducts">
+    <td [class.orangeProduct]="product.imeKreatora == loggedInUser.ime">{{product.naziv}}</td>
+    <td>{{product.cena}}</td>
+    <td>{{product.lajkovi}}</td>
+    <td>{{product.imeKreatora}}</td>
+    <td>{{product.prezimeKreatora}}</td>
+    <td><button (click)="likeProduct(product)">Lajkuj proizvod</button></td>
+  </tr>
+</table>
+<hr>
+<input type="text" [(ngModel)]="newProduct.naziv"> <br><br>
+<textarea cols="30" rows="10" [(ngModel)]="newProduct.opis"></textarea> <br>
+<button (click)="addNewProduct()">Dodaj</button>
+<hr>
