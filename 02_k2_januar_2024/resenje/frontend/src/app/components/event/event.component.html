@@ -1,0 +1,11 @@
+{{event.naziv}}, {{event.mesto}}, {{event.organizator}}, {{event.datum}} <br>
+dolaze: <br>
+<div *ngFor="let guest of event.dolazi">
+  gost: {{guest.korisnik}} <br>
+  posluzenje: {{guest.posluzenje}} <br>
+</div>
+<hr>
+<input type="text" [(ngModel)]="guest.posluzenje"> <br>
+<button (click)="registerForEvent()">Dolazim</button> <br>
+{{message}}
+<hr>

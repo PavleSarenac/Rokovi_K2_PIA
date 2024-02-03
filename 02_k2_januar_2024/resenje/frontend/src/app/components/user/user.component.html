@@ -1,0 +1,55 @@
+<button (click)="logout()">Odjavi se</button>
+<hr>
+{{loggedInUser.ime}} {{loggedInUser.prezime}}, {{loggedInUser.mejl}}
+<hr>
+Azuriraj svoje podatke <br>
+<input type="text" [(ngModel)]="updatedUser.ime"> <br>
+<input type="text" [(ngModel)]="updatedUser.prezime"> <br>
+<input type="text" [(ngModel)]="updatedUser.mejl"> <br>
+<input type="text" [(ngModel)]="friend"> <br>
+<button (click)="addFriend()">Dodaj prijatelja</button> <br>
+<button (click)="deleteAllFriends()">Obrisi sve trenutne prijatelje</button> <br>
+<button (click)="updateUserInfo()">Azuriraj svoje podatke</button>
+<hr>
+Sve predstojece proslave <br>
+<table>
+  <tr>
+    <th>naziv</th>
+    <th>mesto</th>
+    <th>organizator</th>
+    <th>datum</th>
+  </tr>
+  <tr *ngFor="let event of allFutureEvents"
+    [class.greenBackground]="loggedInUser.prijatelji.includes(event.organizator)">
+    <td>{{event.naziv}}</td>
+    <td>{{event.mesto}}</td>
+    <td>{{event.organizator}}</td>
+    <td>{{event.datum}}</td>
+    <td *ngIf="loggedInUser.prijatelji.includes(event.organizator)"><button
+        (click)="showEventDetails(event)">Pregled</button></td>
+  </tr>
+</table>
+<hr>
+Sve proslave koje vi organizujete
+<table>
+  <tr>
+    <th>naziv</th>
+    <th>datum</th>
+    <th>broj gostiju</th>
+  </tr>
+  <tr *ngFor="let event of allUsersEvents">
+    <td>{{event.naziv}}</td>
+    <td>{{event.datum}}</td>
+    <td>{{event.dolazi.length}}</td>
+    <td *ngIf="event.datum >= currentDateString"><button (click)="cancelEvent(event)">Otkazi</button></td>
+  </tr>
+</table>
+<hr>
+Kreiraj novu proslavu <br>
+<hr>
+<input type="text" [(ngModel)]="newEvent.naziv"> <br>
+<input type="text" [(ngModel)]="newEvent.mesto"> <br>
+<input type="date" [(ngModel)]="newEvent.datum"> <br>
+<button (click)="createNewEvent()">Kreiraj</button> <br>
+{{newEventCreationMessage}}
+<hr>

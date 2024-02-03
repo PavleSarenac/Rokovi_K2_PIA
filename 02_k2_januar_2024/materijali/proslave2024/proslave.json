@@ -1,0 +1,78 @@
+[
+	{
+		"naziv": "Proslava diplome",
+		"mesto": "Splav 5",
+		"organizator": "mare",
+		"datum": "2024-02-10",
+		"dolazi": [
+			{
+				"korisnik": "ana",
+				"posluzenje": "vino"
+			},
+			{
+				"korisnik": "jana",
+				"posluzenje": ""
+			}
+		]
+	},
+	{
+		"naziv": "Proslava master",
+		"mesto": "Splav 15",
+		"organizator": "mare",
+		"datum": "2023-02-10",
+		"dolazi": [
+			{
+				"korisnik": "jana",
+				"posluzenje": ""
+			}
+		]
+	},
+	{
+		"naziv": "Prvi rodjendan",
+		"mesto": "Restoran Lovac",
+		"organizator": "jana",
+		"datum": "2024-06-10",
+		"dolazi": [
+			{
+				"korisnik": "mare",
+				"posluzenje": "pecenje"
+			}
+		]
+	},
+	{
+		"naziv": "Svadba",
+		"mesto": "Topciderac",
+		"organizator": "jana",
+		"datum": "2024-06-08",
+		"dolazi": [
+			
+		]
+	},
+	{
+		"naziv": "Matura",
+		"mesto": "Sajam",
+		"organizator": "jana",
+		"datum": "2024-05-08",
+		"dolazi": [
+			
+		]
+	},
+	{
+		"naziv": "18. rodjendan",
+		"mesto": "Kafana na vodi",
+		"organizator": "jova",
+		"datum": "2024-01-10",
+		"dolazi": [
+			
+		]
+	},
+	{
+		"naziv": "30. rodjendan",
+		"mesto": "Teatro",
+		"organizator": "ana",
+		"datum": "2024-01-08",
+		"dolazi": [
+			
+		]
+	}
+]

@@ -1,0 +1,42 @@
+[
+	{
+		"ime": "Marko",
+		"prezime": "Markovic",
+		"kor_ime": "mare",
+		"lozinka": "mare123",
+		"mejl": "mare@gmail.com",
+		"prijatelji": [
+			"jana", "jova", "ana"
+		]
+	},
+	{
+		"ime": "Jana",
+		"prezime": "Nikolic",
+		"kor_ime": "jana",
+		"lozinka": "jana123",
+		"mejl": "jana@gmail.com",
+		"prijatelji": [
+			"mare", "ana"
+		]
+	},
+	{
+		"ime": "Jova",
+		"prezime": "Perovic",
+		"kor_ime": "jova",
+		"lozinka": "jova123",
+		"mejl": "jova@gmail.com",
+		"prijatelji": [
+			"ana"
+		]
+	},
+	{
+		"ime": "Ana",
+		"prezime": "Petrovic",
+		"kor_ime": "ana",
+		"lozinka": "ana123",
+		"mejl": "ana@gmail.com",
+		"prijatelji": [
+			"mare", "jana"
+		]
+	}
+]
