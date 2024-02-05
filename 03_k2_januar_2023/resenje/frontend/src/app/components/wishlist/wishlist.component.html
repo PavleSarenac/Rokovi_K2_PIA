@@ -1,0 +1,19 @@
+<table>
+  <tr>
+    <th>proizvod</th>
+    <th>cena</th>
+    <th>kupio</th>
+  </tr>
+  <tr *ngFor="let wish of wishList" [class.redBackground]="wish.kupio != null && wish.kupio !=''"
+    [class.greenBackground]="(wish.kupio == null || wish.kupio == '') && wish.cena <= buyer.naStanju">
+    <td>{{wish.proizvod}}</td>
+    <td>{{wish.cena}}</td>
+    <td>{{wish.anonimno ? "anonimno" : wish.kupio}}</td>
+    <td *ngIf="(wish.kupio == null || wish.kupio == '') && wish.cena <= buyer.naStanju">
+      <button (click)="buy(wish, false)">Kupi</button>
+      <button (click)="buy(wish, true)">Kupi anonimno</button>
+    </td>
+  </tr>
+</table>
+<hr>
+<button (click)="back()">Nazad</button>

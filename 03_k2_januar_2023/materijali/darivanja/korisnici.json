@@ -1,0 +1,94 @@
+[
+  {
+    "korisnickoIme": "pera",
+    "lozinka": "pera123",
+    "ime": "Petar",
+    "prezime": "Petrovic",
+    "tip": "registrovani",
+    "potroseno": 7580,
+    "naStanju": 7500,
+    "lista": []
+  },
+  {
+    "korisnickoIme": "zika",
+    "lozinka": "zika123",
+    "ime": "Zika",
+    "prezime": "Zikic",
+    "tip": "registrovani",
+    "potroseno": 4500,
+    "naStanju": 4500,
+    "lista": [
+      {
+        "proizvod": "stona lampa",
+        "cena": 1200,
+        "kupio": null,
+        "anonimno": false
+      },
+      {
+        "proizvod": "knjiga 'Da Vincijev kod'",
+        "cena": 990,
+        "kupio": "pera",
+        "anonimno": true
+      }
+    ]
+  },
+  {
+    "korisnickoIme": "ana",
+    "lozinka": "ana123",
+    "ime": "Ana",
+    "prezime": "Andric",
+    "tip": "registrovani",
+    "potroseno": 1600,
+    "naStanju": 5600,
+    "lista": [
+      {
+        "proizvod": "planer za 2023",
+        "cena": 1600,
+        "kupio": null,
+        "anonimno": false
+      },
+      {
+        "proizvod": "lazy bag'",
+        "cena": 2990,
+        "kupio": "pera",
+        "anonimno": false
+      },
+      {
+        "proizvod": "drustvena igra",
+        "cena": 3400,
+        "kupio": "pera",
+        "anonimno": true
+      },
+      {
+        "proizvod": "bezicne slusalice'",
+        "cena": 4500,
+        "kupio": "zika",
+        "anonimno": false
+      }
+    ]
+  },
+  {
+    "korisnickoIme": "maja",
+    "lozinka": "maja123",
+    "ime": "Marija",
+    "prezime": "Maric",
+    "tip": "registrovani",
+    "potroseno": 0,
+    "naStanju": 6500,
+    "lista": [
+      {
+        "proizvod": "planer za 2023",
+        "cena": 1600,
+        "kupio": "ana",
+        "anonimno": false
+      }
+    ]
+  },
+  {
+    "korisnickoIme": "mraz",
+    "lozinka": "dedamraz",
+    "ime": "Deda",
+    "prezime": "Mraz",
+    "tip": "administrator"
+  }
+]

@@ -1,0 +1,8 @@
+<button (click)="logout()">Odjavi se</button>
+<hr>
+Svi korisnici: <br>
+<div *ngFor="let user of allUsers">
+  {{user.ime}} {{user.prezime}}; potroseno: {{user.potroseno}}
+  <button (click)="adminPay(user)" *ngIf="user.naStanju < 5000">Uplati 5000 na racun</button>
+</div>
+<hr>

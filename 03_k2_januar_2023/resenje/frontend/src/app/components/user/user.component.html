@@ -1,0 +1,25 @@
+<button (click)="logout()">Odjavi se</button>
+<hr>
+<table>
+  <tr>
+    <th>proizvod</th>
+    <th>cena</th>
+    <th>kupio</th>
+  </tr>
+  <tr *ngFor="let wish of wishList">
+    <td>{{wish.proizvod}}</td>
+    <td>{{wish.cena}}</td>
+    <td>{{wish.anonimno ? "anonimno" : wish.kupio}}</td>
+  </tr>
+</table>
+<hr>
+<input type="text" [(ngModel)]="newProduct.proizvod"> <br>
+<input type="number" [(ngModel)]="newProduct.cena"> <br>
+<button (click)="addProduct()">Dodaj</button> <br>
+<span style="color: red;">{{addProductError}}</span>
+<hr>
+Ostali korisnici: <br>
+<div *ngFor="let user of allOtherUsers">
+  {{user.ime}} {{user.prezime}} <button (click)="seeWishList(user)">Vidi listu</button>
+</div>
+<hr>
