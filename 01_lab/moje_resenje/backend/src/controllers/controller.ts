@@ -57,6 +57,8 @@ export class Controller {
         )
     }
 
+    // Korisceni operatori:
+    // $inc: https://www.mongodb.com/docs/manual/reference/operator/update/inc/#example
     likeProduct = (request: express.Request, response: express.Response) => {
         ProductModel.updateOne(
             {

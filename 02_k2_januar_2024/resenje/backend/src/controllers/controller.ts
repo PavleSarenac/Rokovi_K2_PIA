@@ -42,6 +42,8 @@ export class Controller {
         )
     }
 
+    // Korisceni operatori:
+    // $gte: https://www.mongodb.com/docs/manual/reference/operator/query/gte/#match-document-fields
     getAllFutureEvents = (request: express.Request, response: express.Response) => {
         let currentDate = new Date()
         let currentDateString = currentDate.toISOString().substring(0, 10)
@@ -60,17 +62,14 @@ export class Controller {
         )
     }
 
+    // Korisceni operatori:
+    // $elemMatch: https://www.mongodb.com/docs/manual/reference/operator/query/elemMatch/#array-of-embedded-documents
+    // $push: https://www.mongodb.com/docs/manual/reference/operator/update/push/#append-a-value-to-an-array
     registerForEvent = (request: express.Request, response: express.Response) => {
         EventModel.find(
             {
-                $and: [
-                    {
-                        datum: request.body.event.datum
-                    },
-                    {
-                        dolazi: { $elemMatch: { korisnik: request.body.guest.korisnik } }
-                    }
-                ]
+                datum: request.body.event.datum,
+                dolazi: { $elemMatch: { korisnik: request.body.guest.korisnik } }
             }
         ).then(
             (events) => {
