@@ -1,0 +1,8 @@
+<input type="text" [(ngModel)]="username"> <br>
+<input type="password" [(ngModel)]="password"> <br>
+<input type="radio" name="userType" [(ngModel)]="userType" value="agencija"> agencija
+<input type="radio" name="userType" [(ngModel)]="userType" value="putnik"> putnik
+<br>
+<button (click)="login()">Prijavi se</button> <br>
+<span style="color: red;">{{error}}</span>
+<hr>

@@ -1,0 +1,66 @@
+<button (click)="logout()">Odjavi se</button>
+<hr>
+{{loggedInTraveler.ime}} {{loggedInTraveler.prezime}}, {{loggedInTraveler.imejl}} <br>
+Trenutna lokacija: {{loggedInTraveler.lokacijatrenutna}} <br>
+<select (change)="updateLocation()" [(ngModel)]="newLocation">
+  <option *ngFor="let location of uniqueLocations">
+    {{location}}
+  </option>
+</select>
+<hr>
+Sve vase kupljene usluge: <br>
+<table>
+  <tr>
+    <th>naziv agencije</th>
+    <th>tip usluge</th>
+    <th>lokacija od</th>
+    <th>lokacija do</th>
+    <th>broj saputnika</th>
+  </tr>
+  <tr *ngFor="let trip of loggedInTraveler.lista">
+    <td>{{trip.naziv}}</td>
+    <td>{{trip.tip}}</td>
+    <td>{{trip.lokacija_od}}</td>
+    <td>{{trip.lokacija_do}}</td>
+    <td>{{trip.brojsaputnika}}</td>
+  </tr>
+</table>
+<hr>
+<input type="text" [(ngModel)]="searchLocationTo"> <br>
+<select multiple [(ngModel)]="searchOfferTypes">
+  <option>aviokarta</option>
+  <option>brzivoz</option>
+  <option>hotel</option>
+</select> <br>
+<input type="number" [(ngModel)]="searchPriceFrom"> <br>
+<input type="number" [(ngModel)]="searchPriceTo"> <br>
+<button (click)="search()">PRONAĐI</button> <br>
+<span style="color: red;">{{searchError}}</span> <br>
+<div *ngIf="searchError.length == 0 && isSearchClicked && searchResults.length > 0">
+  Rezultati pretrage:
+  <table>
+    <tr>
+      <th>idponude</th>
+      <th>lokacija_od</th>
+      <th>lokacija_do</th>
+      <th>tip</th>
+      <th>period</th>
+      <th>cena</th>
+      <th>broj_mesta</th>
+    </tr>
+    <tr *ngFor="let offer of searchResults">
+      <td>{{offer.idponude}}</td>
+      <td>{{offer.lokacija_od}}</td>
+      <td>{{offer.lokacija_do}}</td>
+      <td>{{offer.tip}}</td>
+      <td>{{offer.period}}</td>
+      <td><button (click)="buyOffer(offer)">{{offer.cena}}</button></td>
+      <td>{{offer.broj_mesta}}</td>
+    </tr>
+  </table>
+</div>
+<br>
+<span *ngIf="searchResults.length == 0 && isSearchClicked && searchError.length == 0">
+  Nema rezultata koji zadovoljavaju pretragu
+</span>
+<hr>

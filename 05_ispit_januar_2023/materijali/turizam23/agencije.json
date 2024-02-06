@@ -1,0 +1,200 @@
+[
+    {
+        "korisnickoIme": "airserbia",
+        "lozinka": "Agencija123",
+        "tip": "agencija",
+        "naziv": "Air Serbia",
+        "PIB": 100001765,
+        "usluge": [
+            {
+                "idponude": 1,
+                "lokacija_od": "Beograd",
+                "lokacija_do": "Pariz",
+                "tip": "aviokarta",
+                "period": "januar-maj 2023",
+                "cena": 13955,
+                "broj_mesta": 12
+            },
+            {
+                "idponude": 2,
+                "lokacija_od": "Beograd",
+                "lokacija_do": "Rim",
+                "tip": "aviokarta",
+                "period": "januar-april 2023",
+                "cena": 11950.5,
+                "broj_mesta": 13
+            },
+            {
+                "idponude": 5,
+                "lokacija_od": "Pariz",
+                "lokacija_do": "Beograd",
+                "tip": "aviokarta",
+                "period": "mart-april 2023",
+                "cena": 18990,
+                "broj_mesta": 11
+            },
+            {
+                "idponude": 6,
+                "lokacija_od": "Pariz",
+                "lokacija_do": "Beograd",
+                "tip": "aviokarta",
+                "period": "mart-april 2023",
+                "cena": 9980.5,
+                "broj_mesta": 5
+            },
+            {
+                "idponude": 12,
+                "lokacija_od": "",
+                "lokacija_do": "Pariz",
+                "tip": "hotel",
+                "period": "januar-mart 2023",
+                "cena": 7650,
+                "broj_mesta": 7
+            }
+        ]
+    },
+    {
+        "korisnickoIme": "airfrance",
+        "lozinka": "Agencija123",
+        "tip": "agencija",
+        "naziv": "Air France",
+        "PIB": 200305421,
+        "usluge": [
+            {
+                "idponude": 14,
+                "lokacija_od": "Pariz",
+                "lokacija_do": "Singapur",
+                "tip": "aviokarta",
+                "period": "cele godine",
+                "cena": 75005,
+                "broj_mesta": 4
+            },
+            {
+                "idponude": 15,
+                "lokacija_od": "Pariz",
+                "lokacija_do": "Rim",
+                "tip": "aviokarta",
+                "period": "prolece-leto 2023",
+                "cena": 15000,
+                "broj_mesta": 6
+            }
+        ]
+    },
+    {
+        "korisnickoIme": "pruge",
+        "lozinka": "Agencija123",
+        "tip": "agencija",
+        "naziv": "Zeleznice Srbije",
+        "PIB": 100200300,
+        "usluge": [
+            {
+                "idponude": 7,
+                "lokacija_od": "Beograd",
+                "lokacija_do": "Novi Sad",
+                "tip": "brzivoz",
+                "period": "cele godine",
+                "cena": 1600,
+                "broj_mesta": 22
+            },
+            {
+                "idponude": 8,
+                "lokacija_od": "Novi Sad",
+                "lokacija_do": "Beograd",
+                "tip": "brzivoz",
+                "period": "cele godine",
+                "cena": 1500,
+                "broj_mesta": 18
+            },
+            {
+                "idponude": 9,
+                "lokacija_od": "Beograd",
+                "lokacija_do": "Kragujevac",
+                "tip": "brzivoz",
+                "period": "svake srede i petka",
+                "cena": 1250,
+                "broj_mesta": 3
+            },
+            {
+                "idponude": 10,
+                "lokacija_od": "Kragujevac",
+                "lokacija_do": "Beograd",
+                "tip": "brzivoz",
+                "period": "svake srede i petka",
+                "cena": 1275,
+                "broj_mesta": 6
+            },
+            {
+                "idponude": 16,
+                "lokacija_od": "Novi Sad",
+                "lokacija_do": "Kragujevac",
+                "tip": "brzivoz",
+                "period": "cele godine",
+                "cena": 2200,
+                "broj_mesta": 10
+            },
+            {
+                "idponude": 17,
+                "lokacija_od": "Kragujevac",
+                "lokacija_do": "Novi Sad",
+                "tip": "brzivoz",
+                "period": "januar-oktobar",
+                "cena": 2200,
+                "broj_mesta": 11
+            }
+        ]
+    },
+    {
+        "korisnickoIme": "filip",
+        "lozinka": "Agencija123",
+        "tip": "agencija",
+        "naziv": "Filip Travel",
+        "PIB": 100096093,
+        "usluge": [
+            {
+                "idponude": 11,
+                "lokacija_od": "",
+                "lokacija_do": "Beograd",
+                "tip": "hotel",
+                "period": "cele godine",
+                "cena": 3400,
+                "broj_mesta": 15
+            }
+        ]
+    },
+    {
+        "korisnickoIme": "kontiki",
+        "lozinka": "Agencija123",
+        "tip": "agencija",
+        "naziv": "Kontiki Travel",
+        "PIB": 107932469,
+        "usluge": [
+            {
+                "idponude": 3,
+                "lokacija_od": "Beograd",
+                "lokacija_do": "Pariz",
+                "tip": "aviokarta",
+                "period": "jun/jul 2023",
+                "cena": 16677,
+                "broj_mesta": 6
+            },
+            {
+                "idponude": 4,
+                "lokacija_od": "Beograd",
+                "lokacija_do": "Pariz",
+                "tip": "aviokarta",
+                "period": "avgust/septembar 2023",
+                "cena": 15550,
+                "broj_mesta": 15
+            },
+            {
+                "idponude": 13,
+                "lokacija_od": "",
+                "lokacija_do": "Rim",
+                "tip": "hotel",
+                "period": "cele godine",
+                "cena": 6200,
+                "broj_mesta": 15
+            }
+        ]
+    }
+]

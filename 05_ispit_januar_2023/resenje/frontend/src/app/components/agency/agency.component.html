@@ -1,0 +1,38 @@
+<button (click)="logout()">Odjavi se</button>
+<hr>
+{{loggedInAgency.naziv}}; {{loggedInAgency.PIB}}; <br>
+<table>
+  <tr>
+    <th>tip</th>
+    <th>lokacija_od</th>
+    <th>lokacija_do</th>
+    <th>period</th>
+    <th>broj_mesta</th>
+    <th>cena</th>
+  </tr>
+  <tr *ngFor="let offer of loggedInAgency.usluge" [class.yellowBackground]="offer.broj_mesta < 5">
+    <td>{{offer.tip}}</td>
+    <td>{{offer.lokacija_od}}</td>
+    <td>{{offer.lokacija_do}}</td>
+    <td>{{offer.period}}</td>
+    <td>{{offer.broj_mesta}}</td>
+    <td>{{offer.cena}}</td>
+  </tr>
+</table>
+<hr>
+<select [(ngModel)]="newOffer.tip">
+  <option>aviokarta</option>
+  <option>brzivoz</option>
+  <option>hotel</option>
+</select>
+<br>
+<input type="text" [(ngModel)]="newOffer.lokacija_od" [disabled]="newOffer.tip == 'hotel'"> <br>
+<input type="text" [(ngModel)]="newOffer.lokacija_do"> <br>
+<input type="text" [(ngModel)]="newOffer.period"> <br>
+<input type="number" [(ngModel)]="newOffer.cena"> <br>
+<input type="number" [(ngModel)]="newOffer.broj_mesta"> <br>
+<button (click)="addNewOffer()">Dodaj novu uslugu</button><br>
+<div *ngFor="let error of newOfferErrors" style="color: red;">
+  {{error}}
+</div>
+<hr>

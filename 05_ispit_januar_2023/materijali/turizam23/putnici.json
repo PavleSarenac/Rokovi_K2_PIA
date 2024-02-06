@@ -1,0 +1,109 @@
+[
+  {
+    "korisnickoIme": "goran",
+    "lozinka": "Sifra123",
+    "ime": "Goran",
+    "prezime": "Novaković",
+    "tip": "putnik",
+    "imejl": "goranche@lovacrestoran.rs",
+    "lokacijatrenutna": "Rim",
+    "novac": 44295.5,
+    "lista": [
+      {
+        "idusluge": 2,
+        "brojsaputnika": 2,
+        "lokacija_od": "Beograd",
+        "lokacija_do": "Rim"
+      }
+    ]
+  },
+  {
+    "korisnickoIme": "jeca",
+    "lozinka": "Sifra123",
+    "ime": "Jelena",
+    "prezime": "Petrović",
+    "tip": "putnik",
+    "imejl": "jelena@sorbonne.fr",
+    "lokacijatrenutna": "Singapur",
+    "novac": 105000,
+    "lista": [
+      {
+        "idusluge": 1,
+        "brojsaputnika": 1,
+        "lokacija_od": "Beograd",
+        "lokacija_do": "Pariz"
+      },
+      {
+        "idusluge": 14,
+        "brojsaputnika": 1,
+        "lokacija_od": "Pariz",
+        "lokacija_do": "Singapur"
+      }
+    ]
+  },
+  {
+    "korisnickoIme": "tijana",
+    "lozinka": "Sifra123",
+    "ime": "Tijana",
+    "prezime": "Marković",
+    "tip": "putnik",
+    "imejl": "tijana@zastava-fiat.rs",
+    "lokacijatrenutna": "Kragujevac",
+    "novac": 33650,
+    "lista": [
+      {
+        "idusluge": 7,
+        "brojsaputnika": 0,
+        "lokacija_od": "Beograd",
+        "lokacija_do": "Novi Sad"
+      },
+      {
+        "idusluge": 16,
+        "brojsaputnika": 1,
+        "lokacija_od": "Novi Sad",
+        "lokacija_do": "Kragujevac"
+      },
+      {
+        "idusluge": 10,
+        "brojsaputnika": 3,
+        "lokacija_od": "Kragujevac",
+        "lokacija_do": "Beograd"
+      },
+      {
+        "idusluge": 9,
+        "brojsaputnika": 5,
+        "lokacija_od": "Beograd",
+        "lokacija_do": "Kragujevac"
+      }
+    ]
+  },
+  {
+    "korisnickoIme": "olja",
+    "lozinka": "Sifra123",
+    "ime": "Olivera",
+    "prezime": "Gavrilović",
+    "tip": "putnik",
+    "imejl": "olja@levi9.rs",
+    "lokacijatrenutna": "Novi Sad",
+    "novac": 18230,
+    "lista": [
+      {
+        "idusluge": 7,
+        "brojsaputnika": 1,
+        "lokacija_od": "Beograd",
+        "lokacija_do": "Novi Sad"
+      }
+    ]
+  },
+  {
+    "korisnickoIme": "milos",
+    "lozinka": "Sifra123",
+    "ime": "Miloš",
+    "prezime": "Marjanović",
+    "tip": "putnik",
+    "imejl": "misha@telekom.admin.rs",
+    "lokacijatrenutna": "Beograd",
+    "novac": 55660,
+    "lista": []
+  }
+]
