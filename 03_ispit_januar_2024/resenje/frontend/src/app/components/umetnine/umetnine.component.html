@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>naziv</th>
+    <th>ponuda</th>
+  </tr>
+  <tr *ngFor="let artwork of auctionArtworks">
+    <td>{{artwork.naziv}}</td>
+    <td>{{artwork.ponuda}}</td>
+    <td><input type="number" [(ngModel)]="artwork.novaPonuda"></td>
+    <td><button (click)="bid(artwork)">Potvrdi</button></td>
+    <td><span style="color: red;">{{artwork.error}}</span></td>
+  </tr>
+</table>
+<hr>

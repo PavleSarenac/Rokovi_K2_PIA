@@ -1,0 +1,34 @@
+[
+  {
+    "korisnicko_ime": "admin",
+    "lozinka": "admin123",
+    "ime": "Admin",
+    "prezime": "Admin",
+    "mejl": "admin@gmail.com",
+    "tip": "prodavac"
+  },
+  {
+    "korisnicko_ime": "mika",
+    "lozinka": "mika123",
+    "ime": "Mitar",
+    "prezime": "Mikic",
+    "mejl": "mika@gmail.com",
+    "tip": "kupac"
+  },
+  {
+    "korisnicko_ime": "pera",
+    "lozinka": "pera123",
+    "ime": "Petar",
+    "prezime": "Petrovic",
+    "mejl": "pera@gmail.com",
+    "tip": "kupac"
+  },
+  {
+    "korisnicko_ime": "zika",
+    "lozinka": "zika123",
+    "ime": "Zile",
+    "prezime": "Markovic",
+    "mejl": "zika@gmail.com",
+    "tip": "kupac"
+  }
+]

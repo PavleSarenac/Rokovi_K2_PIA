@@ -1,0 +1,23 @@
+<button (click)="logout()">Odjavi se</button>
+<hr>
+<table>
+  <tr>
+    <th>naziv</th>
+    <th>pocetak</th>
+    <th>kraj</th>
+  </tr>
+  <tr *ngFor="let auction of allAuctions" [class.redBackground]="auction.kraj < currentDateTime"
+    [class.greenBackground]="auction.kraj >= currentDateTime">
+    <td>{{auction.naziv}}</td>
+    <td>{{auction.pocetak}}</td>
+    <td>{{auction.kraj}}</td>
+    <td *ngIf="auction.kraj < currentDateTime">
+      <span *ngFor="let artwork of auction.umetnine">
+        <span *ngIf="artwork.ponuda != null && artwork.vlasnik != null">
+          {{artwork.naziv}} ({{artwork.imeVlasnika}} {{artwork.prezimeVlasnika}});
+        </span>
+      </span>
+    </td>
+  </tr>
+</table>
+<hr>

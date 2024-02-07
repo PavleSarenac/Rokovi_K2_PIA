@@ -1,0 +1,33 @@
+<button (click)="logout()">Odjavi se</button>
+<hr>
+{{user.ime}} {{user.prezime}}, {{user.mejl}}
+<hr>
+<table>
+  <tr>
+    <th>naziv</th>
+    <th>pocetak</th>
+    <th>kraj</th>
+  </tr>
+  <tr *ngFor="let auction of allCurrentAuctions">
+    <td><button (click)="seeArtworks(auction)">{{auction.naziv}}</button></td>
+    <td>{{auction.pocetak}}</td>
+    <td>{{auction.kraj}}</td>
+  </tr>
+</table>
+<hr>
+<div *ngIf="allBoughtArtworks.length == 0">
+  Niste kupili nijednu umetninu!
+</div>
+<div *ngIf="allBoughtArtworks.length > 0">
+  <table>
+    <tr>
+      <th>naziv</th>
+      <th>vrednost</th>
+    </tr>
+    <tr *ngFor="let artwork of allBoughtArtworks">
+      <td>{{artwork.naziv}}</td>
+      <td>{{artwork.ponuda}}</td>
+    </tr>
+  </table>
+</div>
+<hr>
