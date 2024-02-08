@@ -1,0 +1,37 @@
+<button (click)="logout()">Odjavi se</button>
+<hr>
+<table>
+  <tr>
+    <th>kupac</th>
+    <th>proizvodi</th>
+    <th>racun</th>
+  </tr>
+  <tr *ngFor="let order of allOrders" [class.redBackground]="order.ukupnaKilaza > 20"
+    [class.greenBackground]="order.ukupnaKilaza < 2">
+    <td>{{order.imeKupca}}</td>
+    <td>
+      <span *ngFor="let product of order.proizvodi">
+        {{product.naziv}} ({{product.kolicina}});
+      </span>
+    </td>
+    <td>{{order.racun}}</td>
+  </tr>
+</table>
+<hr>
+<table>
+  <tr>
+    <th>naziv</th>
+    <th>kategorija</th>
+    <th>cena</th>
+    <th>stanje</th>
+  </tr>
+  <tr *ngFor="let product of allProducts">
+    <td>{{product.naziv}}</td>
+    <td>{{product.kategorija}}</td>
+    <td>{{product.cena}}</td>
+    <td>{{product.stanje}}</td>
+    <td><input type="number" [(ngModel)]="product.workerAddedKilograms"></td>
+  </tr>
+</table>
+<button (click)="updateQuantity()">Dodaj</button>
+<hr>

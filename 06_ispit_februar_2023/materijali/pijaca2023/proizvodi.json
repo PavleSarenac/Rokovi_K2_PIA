@@ -1,0 +1,38 @@
+[
+	{
+		"naziv": "krompir",
+		"kategorija": "povrce",
+		"cena": "90",
+		"stanje": 30
+	},
+	{
+		"naziv": "kupus",
+		"kategorija": "povrce",
+		"cena": "90",
+		"stanje": 5
+	},
+	{
+		"naziv": "paprika",
+		"kategorija": "povrce",
+		"cena": "220",
+		"stanje": 10
+	},
+	{
+		"naziv": "jabuka",
+		"kategorija": "voce",
+		"cena": "100",
+		"stanje": 12
+	},
+	{
+		"naziv": "banana",
+		"kategorija": "voce",
+		"cena": "150",
+		"stanje": 30
+	},
+	{
+		"naziv": "ananas",
+		"kategorija": "voce",
+		"cena": "210",
+		"stanje": 3
+	}
+]

@@ -1,0 +1,40 @@
+[
+	{
+		"ime": "Mirko",
+		"prezime": "Mirkovic",
+		"kor_ime": "mirko",
+		"lozinka": "mirko111",
+		"mejl": "mirko@gmail.com",
+		"tip": "kupac",
+		"narudzbine": [
+			{
+				"idN": 1
+			},
+			{
+				"idN": 2
+			}
+		]
+	},
+	{
+		"ime": "Jova",
+		"prezime": "Nedeljkovic",
+		"kor_ime": "jova",
+		"lozinka": "jova111",
+		"mejl": "jova@gmail.com",
+		"tip": "kupac",
+		"narudzbine": [
+			{
+				"idN": 3
+			}
+		]
+	},
+	{
+		"ime": "Maja",
+		"prezime": "Manic",
+		"kor_ime": "maja",
+		"lozinka": "maja111",
+		"mejl": "maja@gmail.com",
+		"tip": "radnik",
+		"narudzbine": []
+	}
+]

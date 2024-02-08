@@ -1,0 +1,10 @@
+<input type="text" [(ngModel)]="username"> <br>
+<input type="password" [(ngModel)]="password"> <br>
+<select [(ngModel)]="userType">
+  <option>kupac</option>
+  <option>radnik</option>
+</select>
+<br>
+<button (click)="login()">Prijavi se</button> <br>
+<span style="color: red;">{{error}}</span>
+<hr>

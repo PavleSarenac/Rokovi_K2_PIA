@@ -1,0 +1,22 @@
+<button (click)="logout()">Odjavi se</button>
+<hr>
+{{user.ime}} {{user.prezime}}, {{user.mejl}}
+<hr>
+<table>
+  <tr>
+    <th>naziv</th>
+    <th>kategorija</th>
+    <th>cena</th>
+    <th>stanje</th>
+  </tr>
+  <tr *ngFor="let product of allProducts">
+    <td>{{product.naziv}}</td>
+    <td>{{product.kategorija}}</td>
+    <td>{{product.cena}}</td>
+    <td>{{product.stanje}}</td>
+    <td><input type="checkbox" [(ngModel)]="product.isChecked" [disabled]="product.stanje == 0"></td>
+  </tr>
+</table>
+<button (click)="order()">Poruci</button> <br>
+<span style="color: red;">{{error}}</span>
+<hr>

@@ -1,0 +1,43 @@
+[
+	{
+		"idN": 1,
+		"kupac": "mirko",
+		"proizvodi": [
+			{
+				"naziv": "kupus",
+				"kolicina": "22"
+			},
+			{
+				"naziv": "krompir",
+				"kolicina": "2.4"
+			}
+		],
+		"racun": 2196
+	},
+	{
+		"idN": 2,
+		"kupac": "mirko",
+		"proizvodi": [
+			{
+				"naziv": "jabuka",
+				"kolicina": "3"
+			}
+		],
+		"racun": 300
+	},
+	{
+		"idN": 3,
+		"kupac": "jova",
+		"proizvodi": [
+			{
+				"naziv": "ananas",
+				"kolicina": "1"
+			},
+			{
+				"naziv": "krompir",
+				"kolicina": "3"
+			}
+		],
+		"racun": 480
+	}
+]

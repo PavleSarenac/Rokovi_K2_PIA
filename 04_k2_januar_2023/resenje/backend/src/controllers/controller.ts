@@ -57,6 +57,8 @@ export class Controller {
         )
     }
 
+    // Korisceni operatori:
+    // $ne: https://www.mongodb.com/docs/manual/reference/operator/query/ne/#match-document-fields
     getAllOtherUsers = (request: express.Request, response: express.Response) => {
         UserModel.find(
             {

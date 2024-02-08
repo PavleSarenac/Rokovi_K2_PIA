@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <th>naziv</th>
+    <th>cena</th>
+  </tr>
+  <tr *ngFor="let product of orderedProducts">
+    <td>{{product.naziv}}</td>
+    <td>{{product.cena}}</td>
+    <td><input type="number" [(ngModel)]="product.numberOfKilograms"></td>
+  </tr>
+</table>
+<button (click)="confirmOrder()">Gotovo</button> <br>
+<span style="color: red;">{{error}}</span> <br>
+<span>{{billMessage}}</span>
+<hr>
