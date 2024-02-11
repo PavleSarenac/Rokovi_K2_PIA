@@ -1,0 +1,60 @@
+<button (click)="logout()">Odjavi se</button>
+<hr>
+<input type="text" [(ngModel)]="newAssignment.sadrzaj"> <br>
+<select [(ngModel)]="assignee">
+  <option *ngFor="let member of teamMembers" value={{member.korisnicko_ime}}>
+    {{member.korisnicko_ime}}
+  </option>
+</select>
+<br>
+<button (click)="assign()">Potvrdi</button>
+<hr>
+<h2>Neobavljeni zadaci</h2> <br>
+Licni zadaci <br>
+<table>
+  <tr>
+    <th>potvrdi</th>
+    <th>sadrzaj</th>
+    <th>obrisi</th>
+  </tr>
+  <tr *ngFor="let assignment of allMyAssignments">
+    <ng-container *ngIf="assignment.tip == 'licni' && !assignment.obavljen">
+      <td><input type="checkbox" (change)="moveToDone(assignment)"></td>
+      <td>{{assignment.sadrzaj}}</td>
+      <td><button (click)="deleteAssignment(assignment)">Obrisi</button></td>
+    </ng-container>
+  </tr>
+</table>
+<hr>
+Delegirani zadaci <br>
+<table>
+  <tr>
+    <th>potvrdi</th>
+    <th>sadrzaj</th>
+    <th>obrisi</th>
+  </tr>
+  <tr *ngFor="let assignment of allMyAssignments">
+    <ng-container *ngIf="assignment.tip == 'delegiran' && !assignment.obavljen">
+      <td><input type="checkbox" (change)="moveToDone(assignment)"></td>
+      <td>{{assignment.sadrzaj}}</td>
+      <td><button (click)="deleteAssignment(assignment)">Obrisi</button></td>
+    </ng-container>
+  </tr>
+</table>
+<hr>
+<h2>Obavljeni zadaci</h2> <br>
+<table>
+  <tr>
+    <th>sadrzaj</th>
+    <th>tip</th>
+    <th>vrati</th>
+  </tr>
+  <tr *ngFor="let assignment of allMyAssignments">
+    <ng-container *ngIf="assignment.obavljen">
+      <td>{{assignment.sadrzaj}}</td>
+      <td>{{assignment.tip}}</td>
+      <td><button (click)="returnToUndone(assignment)">Vrati</button></td>
+    </ng-container>
+  </tr>
+</table>
+<hr>

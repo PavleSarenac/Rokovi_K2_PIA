@@ -1,0 +1,58 @@
+[
+    {
+        "korisnicko_ime": "aca",
+        "lozinka" : "aca123",
+        "ime":"Aleksandar",
+        "prezime" : "Aleksic",
+        "tip" :"vodja",
+        "tim": 1
+    },
+    {
+        "korisnicko_ime": "daca",
+        "lozinka": "daca123",
+        "ime": "Danica",
+        "prezime": "Dacic",
+        "tip": "clan",
+        "tim": 1
+    },
+    {
+        "korisnicko_ime": "pera",
+        "lozinka": "pera123",
+        "ime": "Petar",
+        "prezime": "Peric",
+        "tip": "clan",
+        "tim": 1
+    },
+    {
+        "korisnicko_ime": "kaca",
+        "lozinka": "kaca123",
+        "ime": "Katarina",
+        "prezime": "Katic",
+        "tip": "vodja",
+        "tim": 2
+    },
+    {
+        "korisnicko_ime": "mika",
+        "lozinka": "mika123",
+        "ime": "Mika",
+        "prezime": "Micic",
+        "tip": "clan",
+        "tim": 2
+    },
+    {
+        "korisnicko_ime": "zika",
+        "lozinka": "zika123",
+        "ime": "Zivorad",
+        "prezime": "Zivic",
+        "tip": "clan",
+        "tim": 1
+    },
+    {
+        "korisnicko_ime": "daki",
+        "lozinka": "daki123",
+        "ime": "Danijel",
+        "prezime": "Dacic",
+        "tip": "clan",
+        "tim": 2
+    }
+]

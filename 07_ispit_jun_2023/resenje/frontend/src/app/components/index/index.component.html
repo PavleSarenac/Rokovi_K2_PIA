@@ -1,0 +1,9 @@
+<input type="text" [(ngModel)]="username"> <br>
+<input type="password" [(ngModel)]="password"> <br>
+<input type="radio" name="userType" value="clan" [(ngModel)]="userType"> clan
+<input type="radio" name="userType" value="vodja" [(ngModel)]="userType"> vodja
+<br>
+<button (click)="login()">Prijavi se</button>
+<br>
+<span style="color: red;">{{error}}</span>
+<hr>

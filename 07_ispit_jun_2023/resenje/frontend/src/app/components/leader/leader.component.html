@@ -1,0 +1,15 @@
+<button (click)="logout()">Odjavi se</button>
+<hr>
+<table>
+  <tr>
+    <th>ime</th>
+    <th>prezime</th>
+    <th>broj</th>
+  </tr>
+  <tr *ngFor="let user of teamMembers" [class.greenBackground]="user.totalDone > 5">
+    <td>{{user.ime}}</td>
+    <td>{{user.prezime}}</td>
+    <td>{{user.totalDone}}</td>
+  </tr>
+</table>
+<hr>

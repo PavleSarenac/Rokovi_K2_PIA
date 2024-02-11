@@ -1,0 +1,44 @@
+[
+    {
+        "sadrzaj": "napisati dnevni izvestaj",
+        "obavljen": false,
+        "tip": "licni",
+        "dodeljen": "pera"
+    },
+    {
+        "sadrzaj": "napisati dnevni izvestaj",
+        "obavljen": false,
+        "tip": "licni",
+        "dodeljen": "daca"
+    },
+    {
+        "sadrzaj": "napisati dnevni izvestaj",
+        "obavljen": false,
+        "tip": "licni",
+        "dodeljen": "mika"
+    },
+    {
+        "sadrzaj": "napisati dnevni izvestaj",
+        "obavljen": false,
+        "tip": "licni",
+        "dodeljen": "zika"
+    },
+    {
+        "sadrzaj": "pripremiti prezentaciju",
+        "obavljen": false,
+        "tip": "delegiran",
+        "dodeljen": "pera"
+    },
+    {
+        "sadrzaj": "azurirati sajt",
+        "obavljen": true,
+        "tip": "licni",
+        "dodeljen": "pera"
+    },
+    {
+        "sadrzaj": "obavestiti klijenta o promeni cenovnika",
+        "obavljen": true,
+        "tip": "delegiran",
+        "dodeljen": "daca"
+    }
+]
